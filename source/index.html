@@ -8,7 +8,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+    <a class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" alt="Логотип компании Mishka" width="86" height="35">
     </a>
     <button class="page-header__toggle" type="button">
@@ -23,10 +23,10 @@
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__item-search">
+          <li class="site-list__item site-list__item--search">
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item site-list__item-basket">
+          <li class="site-list__item site-list__item--basket">
             <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -36,10 +36,10 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин Mishka</h1>
     <section class="product">
-      <header class="product__header">
+      <div class="product__header">
         <h2 class="visually-hidden">Товары магазина</h2>
         <p class="product__slogan">Милые штуки ручной работы для дома</p>
-      </header>
+      </div>
       <ul class="product__list">
         <li class="product__list-item"><a class="product__list-link" href="catalog.html">Предметы интерьера</a></li>
         <li class="product__list-item"><a class="product__list-link" href="catalog.html">Детские игрушки</a></li>
@@ -47,7 +47,7 @@
     </section>
     <section class="product-week">
       <h2 class="product-week__type">Вязаные корзинки</h2>
-      <p class="product-week__title">ТОВАР НЕДЕЛИ</p>
+      <p class="product-week__title">Товар недели</p>
       <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
       <div class="product-week__specification-list">
@@ -64,7 +64,7 @@
           <span class="product-week__specification-description">15 см</span>
         </div>
       </div>
-      <img src="https://via.placeholder.com/150x150" alt="Вязаные корзинки">
+      <img src="https://via.placeholder.com/150x150" alt="Вязаные корзинки" width="260" height="315">
       <span class="product-week__price">Цена: 990 руб.</span>
       <a href="#" class="button product-week__button">Заказать</a>
     </section>
@@ -81,15 +81,20 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__social social">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a href="#" class="social__link social__link--ig"></a>
-      <a href="#" class="social__link social__link--fb"></a>
-      <a href="#" class="social__link social__link--tw"></a>
-    </section>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--ig" aria-label="Мы в Instagram"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--fb" aria-label="Мы в Facebook"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--tw" aria-label="Мы в Twitter"></a>
+      </li>
+    </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy.ru"></a>
     </div>
   </footer>
 </body>

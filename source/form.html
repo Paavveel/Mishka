@@ -24,10 +24,10 @@
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__item-search">
+          <li class="site-list__item site-list__item--search">
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item site-list__item-basket">
+          <li class="site-list__item site-list__item--basket">
             <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -38,15 +38,20 @@
 
   </main>
   <footer class="page-footer">
-    <section class="page-footer__social social">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a href="#" class="social__link social__link--ig"></a>
-      <a href="#" class="social__link social__link--fb"></a>
-      <a href="#" class="social__link social__link--tw"></a>
-    </section>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--ig" aria-label="Мы в Instagram"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--fb" aria-label="Мы в Facebook"></a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--tw" aria-label="Мы в Twitter"></a>
+      </li>
+    </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт htmlacademy.ru"></a>
     </div>
   </footer>
 </body>
