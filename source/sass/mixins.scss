@@ -4,26 +4,14 @@
   }
 }
 
-@mixin viewport--xl {
-  @media (min-width: $viewport--xl - 1) {
-    @content;
-  }
-}
-
 @mixin viewport--lg {
-  @media (min-width: $viewport--lg - 1) {
+  @media (min-width: $viewport--lg) {
     @content;
   }
 }
 
 @mixin viewport--md {
-  @media (min-width: $viewport--md - 1) {
-    @content;
-  }
-}
-
-@mixin viewport--sm {
-  @media (min-width: $viewport--sm - 1) {
+  @media (min-width: $viewport--md) {
     @content;
   }
 }
