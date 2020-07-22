@@ -1,0 +1,41 @@
+.product-week {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.product-week__type {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.product-week__title {
+  color: $color-green;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.product-week__description {
+  color: $color-brown;
+}
+
+.product-week__specification-item {
+  border-bottom: 1px solid $color-grey;
+}
+
+.product-week__specification-type,
+.product-week__specification-description {
+  color: $color-brown;
+  line-height: 20px;
+}
+
+.product-week__price {
+  color: $color-brown;
+  font-weight: bold;
+  font-size: 17px;
+}

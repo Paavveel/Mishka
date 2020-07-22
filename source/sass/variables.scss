@@ -1,0 +1,35 @@
+// Colors
+//---------------------------------------
+
+//Base
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-otherblack: #010000;
+$color-green: #63d1bb;
+$color-brown: #444444;
+$color-grey: #ececec;
+$color-othergrey: #f1f1f1;
+$color-transparent: rgba(0, 0, 0, 0);
+
+$bg-color-green: $color-green;
+$bg-color-othergreen: #56c3b2;
+$bg-color-footer: $color-othergrey;
+
+//Font-Family
+//---------------------------------------
+
+$font-family--opensans: "Open Sans", "Arial", sans-serif;
+
+//Viewports
+//---------------------------------------
+
+$viewport--xs: 320px;
+$viewport--md: 768px;
+$viewport--lg: 1024px;
+
+//Retina
+//---------------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

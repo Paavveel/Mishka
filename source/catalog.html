@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+    <a class="page-header__logo" href="index.html" aria-label="Переход на главную">
       <img src="https://via.placeholder.com/150x150" alt="Логотип компании Mishka" width="86" height="35">
     </a>
     <button class="page-header__toggle" type="button">
@@ -44,29 +45,41 @@
         <li class="catalog__product-item">
           <a href="#" class="catalog__product-link"><img src="https://via.placeholder.com/150x150"
               alt="Зайчик-попрыгайчик" width="260" height="195">
-            <h3 class="catalog__product-name">Зайчик-попрыгайчик</h3>
           </a>
-          <p class="catalog__product-description">Рост 30 см, вес 200 г</p>
-          <span class="catalog__product-price">1 200 руб.</span>
-          <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          <div class="catalog__product-about">
+            <a href="#" class="catalog__product-link">
+              <h3 class="catalog__product-name">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="catalog__product-description">Рост 30 см, вес 200 г</p>
+            <span class="catalog__product-price">1 200 руб.</span>
+            <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          </div>
         </li>
         <li class="catalog__product-item">
           <a href="#" class="catalog__product-link"><img src="https://via.placeholder.com/150x150"
               alt="Корзинка для белья" width="260" height="195">
-            <h3 class="catalog__product-name">Корзинка для белья</h3>
           </a>
-          <p class="catalog__product-description">Диаметр 15 см, высота 10 см</p>
-          <span class="catalog__product-price">690 руб.</span>
-          <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          <div class="catalog__product-about">
+            <a href="#" class="catalog__product-link">
+              <h3 class="catalog__product-name">Корзинка для белья</h3>
+            </a>
+            <p class="catalog__product-description">Диаметр 15 см, высота 10 см</p>
+            <span class="catalog__product-price">690 руб.</span>
+            <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          </div>
         </li>
         <li class="catalog__product-item">
           <a href="#" class="catalog__product-link"><img src="https://via.placeholder.com/150x150"
               alt="Большая корзинка для игрушек" width="260" height="195">
-            <h3 class="catalog__product-name">Большая корзинка для игрушек</h3>
           </a>
-          <p class="catalog__product-description">Диаметр 30 см, высота 30 см</p>
-          <span class="catalog__product-price">1 500 руб.</span>
-          <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          <div class="catalog__product-about">
+            <a href="#" class="catalog__product-link">
+              <h3 class="catalog__product-name">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="catalog__product-description">Диаметр 30 см, высота 30 см</p>
+            <span class="catalog__product-price">1 500 руб.</span>
+            <a href="#" class="catalog__product-tobasket" aria-label="Добавить товар в корзину"></a>
+          </div>
         </li>
       </ul>
     </section>
