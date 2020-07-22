@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@charset "UTF-8";
+
+// Vendors
+
+@import "vendors/normalize";
+
+// Global
+
+@import "variables";
+@import "mixins";
+@import "global/typography";
+@import "global/reboot";
+@import "global/helpers";
+@import "global/container";
+
+
+// Layout
+
+@import "layout/header";
+@import "layout/footer";
+
+// Blocks

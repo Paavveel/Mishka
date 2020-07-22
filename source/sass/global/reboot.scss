@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img,
+video,
+svg {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
