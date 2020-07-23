@@ -1,3 +1,15 @@
-.contacts {
+.contacts__title {
   margin: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__address-subtitle,
+.contacts__email-subtitle,
+.contacts__address,
+.contacts__email {
+  line-height: 30px;
+  color: $color-brown;
 }

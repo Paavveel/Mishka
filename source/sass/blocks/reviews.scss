@@ -1,3 +1,39 @@
 .reviews {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.reviews__title {
   margin: 0;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+
+  line-height: 30px;
+  color: $color-brown;
+}
+
+.reviews__author-name {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.reviews__author-nickname {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 30px;
+  color: $color-brown;
 }
