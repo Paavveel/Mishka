@@ -1,3 +1,7 @@
 .container {
-  margin: 0;
+  padding: 0 30px;
+
+  @include viewport--md {
+    padding: 0 50px;
+  }
 }

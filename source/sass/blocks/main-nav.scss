@@ -1,3 +1,132 @@
 .main-nav {
+  position: absolute;
+  top: 75px;
+  left: 0;
+
+  display: none;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: $color-white;
+
+  @include viewport--md {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgba(0, 0, 0, 0);
+  }
+  @include viewport--lg {
+    justify-content: space-between;
+  }
+
+  &--no-js {
+    position: static;
+
+    display: flex;
+  }
+
+  &--open {
+    display: flex;
+  }
+}
+
+.main-nav__inner-list,
+.main-nav__help-list {
   margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+/*
+.main-nav__inner-item,
+.main-nav__help-item {
+  box-shadow: 0 1px 0 $color-grey, inset 0 1px 0 $color-grey;
+}
+
+*/
+
+.main-nav__inner-item-link,
+.main-nav__help-item-link {
+  display: block;
+  height: fit-content;
+
+  font-weight: bold;
+  font-size: 17px;
+  color: $color-black;
+}
+
+.main-nav__inner-list {
+  @include viewport--md {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    transform: translateY(89px);
+  }
+  @include viewport--lg {
+    width: 40%;
+
+    transform: translateY(0);
+  }
+}
+
+.main-nav__inner-item {
+  padding-left: 76px;
+
+  @include viewport--md {
+    display: flex;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+  @include viewport--lg {
+    align-items: center;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 20px;
+  }
+}
+
+.main-nav__inner-item--desktop {
+  display: none;
+
+  @include viewport--lg {
+    display: block;
+  }
+}
+
+.main-nav__help-list {
+  @include viewport--md {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  @include viewport--lg {
+    width: 40%;
+  }
+}
+
+.main-nav__help-item {
+  padding-left: 76px;
+
+  @include viewport--md {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 89px;
+    margin-left: 17px;
+    padding-left: 0;
+  }
+}
+
+.main-nav__help-item--tablet {
+  display: none;
+
+  @include viewport--md {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
 }

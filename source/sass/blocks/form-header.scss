@@ -1,11 +1,31 @@
 .form-header {
+  min-height: 177px;
+
   background-color: $color-othergrey;
+
+  @include viewport--md {
+    min-height: 238px;
+  }
+  @include viewport--lg {
+    min-height: 272px;
+  }
 }
 
 .form-header__title {
   margin: 0;
+  padding-top: 70px;
 
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+
+  @include viewport--md {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @include viewport--lg {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
