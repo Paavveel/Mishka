@@ -1,8 +1,5 @@
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 506px;
+  min-height: 506px;
 
   background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
@@ -10,11 +7,7 @@
   background-position: top;
 
   @include viewport--md {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 758px;
-    padding: 0 50px;
+    min-height: 758px;
 
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
@@ -24,22 +17,32 @@
   }
 }
 
+.product__inner {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .product__slogan {
   margin: 0;
-  padding-top: 73px;
 
+  padding: 73px 30px 20px;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: $color-otherblack;
+
+  @include viewport--md {
+    padding: 73px 50px 20px;
+  }
 }
 
 .product__list {
+  list-style: none;
   margin: 0;
   padding: 0;
-
-  list-style: none;
 
   @include viewport--md {
     display: flex;
@@ -50,8 +53,7 @@
   background-color: $bg-color-green;
 
   @include viewport--md {
-    flex-grow: 1;
-    width: 334px;
+    width: 100%;
   }
 
   &--othergreen {
@@ -61,12 +63,13 @@
 
 .product__list-link {
   display: block;
-  height: 103px;
+  min-height: 103px;
   font-weight: bold;
   font-size: 19px;
   color: $color-white;
+  padding: 0 30px;
 
   @include viewport--md {
-    height: 119px;
+    min-height: 119px;
   }
 }

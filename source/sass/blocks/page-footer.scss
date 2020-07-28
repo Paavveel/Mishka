@@ -1,12 +1,12 @@
 .page-footer {
+  background-color: $color-othergrey;
+}
+
+.page-footer__inner {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
-
-  background-color: $color-othergrey;
 
   @include viewport--md {
-    padding: 0 50px;
     flex-direction: row;
     justify-content: space-between;
     min-height: 143px;
