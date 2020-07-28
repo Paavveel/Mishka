@@ -1,7 +1,9 @@
 .page-header {
   position: relative;
-  background-color: $color-white;
+
   height: 79px;
+
+  background-color: $color-white;
 
   @include viewport--md {
     height: 89px;
@@ -15,33 +17,37 @@
 */
 
 .page-header__logo {
-  background-image: url(../../img/logo-mobile.svg);
-  background-repeat: no-repeat;
-  height: 35px;
-  width: 86px;
-
   position: absolute;
-  left: 50%;
   top: 21px;
+  left: 50%;
+
+  width: 86px;
+  height: 35px;
+
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
   transform: translateX(-50%);
 
   @include viewport--md {
-    background-image: url(../../img/logo-tablet.svg);
     position: absolute;
     top: 23px;
     left: 50px;
-    transform: none;
+
     width: 113.01px;
     height: 45.96px;
+
+    background-image: url("../../img/logo-tablet.svg");
+    transform: none;
   }
 
   @include viewport--lg {
-    background-image: none;
-    left: 50%;
     top: 9px;
+    left: 50%;
+
     width: 149px;
     height: 72px;
 
+    background-image: none;
     transform: translateX(-50%);
   }
 }
@@ -59,6 +65,10 @@
   top: 30px;
   right: 30px;
 
+  @include viewport--md {
+    display: none;
+  }
+
   span:nth-child(2) {
     display: none;
   }
@@ -71,9 +81,5 @@
     span:nth-child(2) {
       display: block;
     }
-  }
-
-  @include viewport--md {
-    display: none;
   }
 }

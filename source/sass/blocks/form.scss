@@ -1,6 +1,7 @@
 .form__subtitle {
   margin: 54px 0;
   padding: 0 30px;
+
   font-size: 13px;
   color: $color-brown;
 
@@ -16,22 +17,26 @@
 
 .form__container {
   margin: 0;
-  padding: 0 30px;
   margin-bottom: 60px;
+  padding: 0 30px;
+
   border: none;
 
   @include viewport--md {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @include viewport--lg {
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   /* border-top: 1px solid $form-border; */
 }
+
 @include viewport--md {
   .form__container-list--type {
     grid-column: 2 / 4;
@@ -42,8 +47,9 @@
   }
 
   .form__container-list--color {
-    grid-column: 2 / 5;
     display: grid;
+
+    grid-column: 2 / 5;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -71,8 +77,9 @@
   }
 
   .form__container-list--color {
-    grid-column: 2 / 7;
     display: grid;
+
+    grid-column: 2 / 7;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -91,15 +98,17 @@
 }
 
 .form__container-title {
+  padding: 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $color-green;
   text-transform: uppercase;
-  padding: 0;
 
   @include viewport--lg {
     text-align: center;
+
     grid-column: 1 / 2;
   }
 }
@@ -127,9 +136,10 @@
 .form__text,
 .form__tel,
 .form__email {
+  width: 100%;
+
   border: none;
   box-shadow: inset 0 -2px 0 $color-black;
-  width: 100%;
 }
 
 .form__extra {
@@ -152,8 +162,9 @@
   }
 
   @include viewport--md {
-    grid-column: 4 / 6;
     text-align: right;
+
+    grid-column: 4 / 6;
   }
 }
 
@@ -163,14 +174,15 @@
   padding: 0 30px;
 
   @include viewport--md {
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @include viewport--lg {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     flex-direction: row;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 

@@ -7,6 +7,7 @@
   @include viewport--md {
     min-height: 238px;
   }
+
   @include viewport--lg {
     min-height: 272px;
   }
@@ -25,6 +26,7 @@
     font-size: 43px;
     line-height: 50px;
   }
+
   @include viewport--lg {
     font-size: 53px;
     line-height: 57px;

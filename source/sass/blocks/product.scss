@@ -18,6 +18,7 @@
 
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
+
   @include viewport--lg {
     background-image: url("../../img/hero-desktop@1x.jpg");
   }
