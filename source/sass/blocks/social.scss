@@ -1,6 +1,14 @@
 .social {
-  margin: 0;
   padding: 0;
 
   list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__item {
+  padding: 0 20px;
+
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
 }

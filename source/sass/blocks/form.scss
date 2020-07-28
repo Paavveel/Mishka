@@ -1,24 +1,116 @@
 .form__subtitle {
-  margin: 0;
+  margin: 54px 0;
+  padding: 0 30px;
 
   font-size: 13px;
   color: $color-brown;
+
+  @include viewport--lg {
+    padding: 0 213px;
+  }
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__container {
   margin: 0;
-  padding: 0;
+  margin-bottom: 60px;
+  padding: 0 30px;
 
   border: none;
-  border-top: 1px solid $form-border;
+
+  @include viewport--md {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include viewport--lg {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  /* border-top: 1px solid $form-border; */
+}
+
+@include viewport--md {
+  .form__container-list--type {
+    grid-column: 2 / 4;
+  }
+
+  .form__container--color {
+    background-color: $color-othergrey;
+  }
+
+  .form__container-list--color {
+    display: grid;
+
+    grid-column: 2 / 5;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__name--grid {
+    grid-column: 2 / 5;
+  }
+
+  .form__container--contact {
+    background-color: $color-othergrey;
+  }
+
+  .form__tel,
+  .form__email {
+    background-color: $color-othergrey;
+  }
+}
+
+@include viewport--lg {
+  .form__container-list--type {
+    grid-column: 2 / 4;
+  }
+
+  .form__container--color {
+    background-color: $color-othergrey;
+  }
+
+  .form__container-list--color {
+    display: grid;
+
+    grid-column: 2 / 7;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form__name--grid {
+    grid-column: 2 / 6;
+  }
+
+  .form__container--contact {
+    background-color: $color-othergrey;
+  }
+
+  .form__tel,
+  .form__email {
+    background-color: $color-othergrey;
+  }
 }
 
 .form__container-title {
+  padding: 0;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $color-green;
   text-transform: uppercase;
+
+  @include viewport--lg {
+    text-align: center;
+
+    grid-column: 1 / 2;
+  }
 }
 
 .form__container-list {
@@ -29,20 +121,33 @@
 }
 
 .form__name {
+  display: flex;
+  flex-direction: column;
+
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  @include viewport--md {
+    flex-direction: row;
+  }
 }
 
 .form__text,
 .form__tel,
 .form__email {
+  width: 100%;
+
   border: none;
   box-shadow: inset 0 -2px 0 $color-black;
 }
 
 .form__extra {
   border: 2px solid $color-brown;
+
+  @include viewport--md {
+    width: 100%;
+  }
 }
 
 .form__note {
@@ -51,4 +156,38 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-brown;
+
+  @include viewport--md {
+    order: 1;
+  }
+
+  @include viewport--md {
+    text-align: right;
+
+    grid-column: 4 / 6;
+  }
+}
+
+.form__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+
+  @include viewport--md {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include viewport--lg {
+    display: grid;
+    flex-direction: row;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__button {
+  @include viewport--lg {
+    grid-column: 2 / 4;
+  }
 }

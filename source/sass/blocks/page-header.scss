@@ -1,3 +1,85 @@
 .page-header {
-  margin: 0;
+  position: relative;
+
+  height: 79px;
+
+  background-color: $color-white;
+
+  @include viewport--md {
+    height: 89px;
+  }
+}
+/*
+.page-header__top {
+
+  /* box-shadow: 0px 1px 0px $color-grey, inset 0px 1px 0px $color-grey;
+}
+*/
+
+.page-header__logo {
+  position: absolute;
+  top: 21px;
+  left: 50%;
+
+  width: 86px;
+  height: 35px;
+
+  background-image: url("../../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+
+  @include viewport--md {
+    position: absolute;
+    top: 23px;
+    left: 50px;
+
+    width: 113.01px;
+    height: 45.96px;
+
+    background-image: url("../../img/logo-tablet.svg");
+    transform: none;
+  }
+
+  @include viewport--lg {
+    top: 9px;
+    left: 50%;
+
+    width: 149px;
+    height: 72px;
+
+    background-image: none;
+    transform: translateX(-50%);
+  }
+}
+
+.page-header__logo-img {
+  display: none;
+
+  @include viewport--lg {
+    display: block;
+  }
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  @include viewport--md {
+    display: none;
+  }
+
+  span:nth-child(2) {
+    display: none;
+  }
+
+  &--active {
+    span:nth-child(1) {
+      display: none;
+    }
+
+    span:nth-child(2) {
+      display: block;
+    }
+  }
 }

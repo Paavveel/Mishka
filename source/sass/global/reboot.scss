@@ -2,7 +2,6 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-
 html {
   box-sizing: border-box;
 }
@@ -11,12 +10,6 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0 auto;
-  padding: 0;
 }
 
 img,
