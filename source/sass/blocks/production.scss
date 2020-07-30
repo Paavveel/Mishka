@@ -44,9 +44,11 @@
 
 .production__video-mobile {
   display: block;
+
   @include viewport--md {
     display: none;
   }
+
   @include viewport--lg {
     display: none;
   }
@@ -54,10 +56,12 @@
 
 .production__video-tablet {
   display: none;
+
   @include viewport--md {
     display: block;
     order: 1;
   }
+
   @include viewport--lg {
     display: none;
   }
@@ -65,9 +69,11 @@
 
 .production__video-desktop {
   display: none;
+
   @include viewport--md {
     display: none;
   }
+
   @include viewport--lg {
     display: block;
   }

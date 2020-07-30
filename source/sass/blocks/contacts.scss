@@ -35,6 +35,7 @@
 
 .contacts__list {
   margin-bottom: 33px;
+
   @include viewport--md {
     display: flex;
   }
