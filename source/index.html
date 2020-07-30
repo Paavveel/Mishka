@@ -261,7 +261,7 @@
         </ul>
       </section>
       <section class="reviews container">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__inner slider">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
@@ -277,47 +277,86 @@
                 <p class="reviews__author-nickname">@misssssiskras</p>
               </div>
             </blockquote>
-            <button
-              class="reviews__button-prev"
-              type="button"
-              aria-label="Предыдущий отзыв"
-            ></button>
-            <button
-              class="reviews__button-next"
-              type="button"
-              aria-label="Следующий отзыв"
-            ></button>
+            <div class="reviews__list-buttons">
+              <button
+                class="reviews__button-prev"
+                type="button"
+                aria-label="Предыдущий отзыв"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="50px"
+                  height="26.003px"
+                  viewBox="0 0 50 26.003"
+                  enable-background="new 0 0 50 26.003"
+                  xml:space="preserve"
+                >
+                  <polygon
+                    points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "
+                  />
+                </svg>
+              </button>
+              <button
+                class="reviews__button-next"
+                type="button"
+                aria-label="Следующий отзыв"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="50px"
+                  height="26.003px"
+                  viewBox="0 0 50 26.003"
+                  enable-background="new 0 0 50 26.003"
+                  xml:space="preserve"
+                >
+                  <polygon
+                    points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
           <a class="reviews__button button" href="#">Написать</a>
         </div>
       </section>
-      <section class="contacts container">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__list">
-          <div class="contacts__item">
-            <span class="contacts__email-subtitle">e-mail:</span>
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru"
-              >info@mimimishkashop.ru</a
-            >
+      <section class="contacts">
+        <div class="contacts__inner container">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <span class="contacts__email-subtitle">e-mail:</span>
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru"
+                >info@mimimishkashop.ru</a
+              >
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__address-subtitle">адрес:</span>
+              <span class="contacts__address"
+                >г. Санкт-Петербург, <br />
+                ул. Большая Конюшенная, <br />
+                д. 19/8, офис 101</span
+              >
+            </div>
           </div>
-          <div class="contacts__item">
-            <span class="contacts__address-subtitle">адрес:</span>
-            <span class="contacts__address"
-              >г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис
-              101</span
-            >
+
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/-/CCQp4-W0XD"
+              allowfullscreen="true"
+            ></iframe>
           </div>
-        </div>
-        <div class="contacts__map">
-          <img
-            src="https://via.placeholder.com/150x150"
-            alt="Фото карты"
-            width="322"
-            height="457"
-          />
-        </div>
-        <div class="contacts__write">
-          <a class="contacts__button button" href="#">Написать нам</a>
+
+          <div class="contacts__write">
+            <a class="contacts__button button" href="#">Написать нам</a>
+          </div>
         </div>
       </section>
     </main>
