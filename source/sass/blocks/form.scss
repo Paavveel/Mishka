@@ -37,6 +37,51 @@
   /* border-top: 1px solid $form-border; */
 }
 
+.form__radio {
+  position: absolute;
+
+  &:checked + .form__radio-img {
+    background-color: $form-border;
+  }
+}
+
+.form__radio-img {
+  position: absolute;
+  width: 39.84px;
+  height: 42px;
+  border: 2px solid $color-brown;
+  border-radius: 50%;
+  margin-left: -60px;
+
+  @include viewport--md {
+    width: 54px;
+    height: 55px;
+  }
+}
+
+.form__checkbox {
+  position: absolute;
+
+  &:checked + .form__checkbox-img {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form__checkbox-img {
+  position: absolute;
+  width: 37.94px;
+  height: 39px;
+  border: 2px solid $color-brown;
+  margin-left: -61px;
+
+  @include viewport--md {
+    width: 54px;
+    height: 52px;
+  }
+}
+
 @include viewport--md {
   .form__container-list--type {
     grid-column: 2 / 4;
@@ -118,6 +163,14 @@
   padding: 0;
 
   list-style: none;
+
+  &--type {
+    margin-top: 24px;
+  }
+
+  &--color {
+    margin-top: 22px;
+  }
 }
 
 .form__name {
@@ -127,6 +180,18 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  &--radio {
+    padding-left: 60px;
+    flex-direction: row;
+    margin-bottom: 24px;
+    min-height: 42px;
+  }
+
+  &--checkbox {
+    padding-left: 60px;
+    min-height: 61px;
+  }
 
   @include viewport--md {
     flex-direction: row;
