@@ -1,6 +1,7 @@
 .form-header {
   min-height: 177px;
-
+  display: flex;
+  flex-direction: column;
   background-color: $color-othergrey;
 
   @include viewport--md {
@@ -12,9 +13,20 @@
   }
 }
 
+.form-header-img {
+  display: none;
+
+  @include viewport--md {
+    display: block;
+    margin-top: auto;
+    margin-bottom: -1px;
+    width: 100%;
+  }
+}
+
 .form-header__title {
   margin: 0;
-  padding-top: 70px;
+  padding-top: 75px;
 
   font-weight: bold;
   font-size: 27px;
@@ -22,11 +34,13 @@
   text-align: center;
 
   @include viewport--md {
+    padding-top: 101px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @include viewport--lg {
+    padding-top: 103px;
     font-size: 53px;
     line-height: 57px;
   }

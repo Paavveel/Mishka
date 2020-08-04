@@ -2,20 +2,25 @@
   display: flex;
   flex-direction: column;
   padding-top: 31px;
-  padding-bottom: 36px;
-
+  padding-bottom: 35px;
+  /*
   background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+*/
 
   @include viewport--md {
     display: grid;
-
+    padding-bottom: 54px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 111px;
   }
 
   @include viewport--lg {
+    padding-top: 53px;
+    padding-bottom: 74px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 111px 151px auto 119px;
   }
 }
 
@@ -29,7 +34,7 @@
   @include viewport--md {
     font-size: 43px;
     line-height: 50px;
-
+    margin-top: 12px;
     grid-column: 1 / 4;
   }
 
@@ -41,11 +46,13 @@
 
     grid-column: 2 / 5;
     grid-row: 1 / 2;
+
+    margin-top: 63px;
   }
 }
 
 .product-week__title {
-  margin: 0;
+  margin: 6px 0;
 
   font-weight: bold;
   font-size: 17px;
@@ -55,32 +62,53 @@
 
   @include viewport--md {
     grid-column: 4 / 5;
+    text-align: center;
+    width: 128px;
+    margin-left: auto;
+    padding-left: 2px;
+    padding-top: 10px;
   }
 
   @include viewport--lg {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin: 0;
+    margin-left: 17px;
+    padding-top: 67px;
   }
 }
 
 .product-week__description {
   color: $color-brown;
+  margin: 10px 0;
+  padding-right: 11px;
 
   @include viewport--md {
     grid-column: 1 / 3;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 283px;
   }
 
   @include viewport--lg {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    margin-top: 44px;
   }
 }
 
 .product-week__specification-list {
   margin-bottom: 28px;
+  margin-top: 12px;
 
   @include viewport--md {
     grid-column: 1 / 3;
+    margin-top: 37px;
+    margin-right: 43px;
+    width: 292px;
   }
 
   @include viewport--lg {
@@ -120,6 +148,13 @@
 
 .product-week__specification-item {
   border-bottom: 1px solid $color-grey;
+  display: flex;
+  padding-top: 7px;
+  min-height: 39px;
+}
+
+.product-week__specification-type {
+  width: 97px;
 }
 
 .product-week__specification-type,
@@ -130,7 +165,7 @@
 
 .product-week__price {
   display: block;
-  margin: 25px 0;
+  margin: 29px 2px 23px 0;
 
   font-weight: bold;
   font-size: 17px;
@@ -139,21 +174,38 @@
 
   @include viewport--md {
     grid-column: 1 / 3;
+    width: 292px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 43px;
+    margin-bottom: 29px;
   }
 
   @include viewport--lg {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
+    margin-bottom: 0;
+
+    padding-top: 34px;
   }
 }
 
 .product-week__button {
+  padding: 14px;
+  width: 260px;
+  margin: 0 auto;
+
   @include viewport--md {
     grid-column: 1 / 3;
+    margin: 0;
+    width: 292px;
+
+    padding: 12px;
   }
 
   @include viewport--lg {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
+    padding: 4px;
   }
 }
