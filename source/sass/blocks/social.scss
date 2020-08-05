@@ -12,3 +12,14 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.social__link {
+  &:hover .social__link-img {
+    fill: #46c1ae;
+  }
+
+  &:active .social__link-img {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

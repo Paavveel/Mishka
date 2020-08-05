@@ -63,6 +63,7 @@
 .main-nav__help-item-link {
   display: block;
   height: fit-content;
+  width: fit-content;
 
   font-weight: bold;
   font-size: 17px;
@@ -70,6 +71,14 @@
 }
 
 .main-nav__inner-item-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include viewport--md {
     font-size: 15px;
 
@@ -86,6 +95,32 @@
 }
 
 .main-nav__help-item-link {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:hover .main-nav__help-item-link-card-icon {
+    fill: $color-green;
+  }
+
+  &:hover .main-nav__help-item-link-search-icon {
+    fill: $color-green;
+  }
+
+  &:active .main-nav__help-item-link-card-icon {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+
+  &:active .main-nav__help-item-link-search-icon {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+
   @include viewport--md {
     &--search {
       font-size: 0;

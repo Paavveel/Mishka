@@ -18,6 +18,15 @@
   margin-top: 22px;
   margin-left: 14px;
 
+  &:hover .copyright__link-img {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__link-img {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
   @include viewport--md {
     margin-top: 58px;
 

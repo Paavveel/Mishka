@@ -74,58 +74,96 @@
   padding: 0;
 
   @include viewport--md {
+    min-height: 124px;
     display: flex;
+    align-items: flex-end;
   }
 }
 
 .product__list-item {
-  background-color: $bg-color-green;
   position: relative;
 
   @include viewport--md {
     width: 100%;
   }
 
-  &--othergreen {
+  &--left-btn {
+    background-color: $bg-color-green;
+  }
+
+  &--left-btn:hover {
+    background-color: #59d5bc;
+  }
+
+  &--right-btn {
     background-color: $bg-color-othergreen;
+  }
+
+  &--right-btn:hover {
+    background-color: #46c1ae;
   }
 }
 
 .product__list-link {
   display: block;
+
   min-height: 103px;
   font-weight: bold;
   font-size: 19px;
   color: $color-white;
   padding: 25px 10px 14px 30px;
 
+  &--left-hover:hover .product__list-link-interior {
+    opacity: 0.7;
+  }
+
+  &--left-hover:active .product__list-link-interior {
+    opacity: 0.3;
+  }
+
+  &--right-hover:hover .product__list-link-toy {
+    opacity: 0.7;
+  }
+
+  &--right-hover:active .product__list-link-toy {
+    opacity: 0.3;
+  }
+
   @include viewport--md {
     min-height: 119px;
     font-size: 20px;
     line-height: 30px;
     padding: 27px 19px 17px 37px;
+
+    &--left-hover:hover {
+      min-height: 124px;
+    }
+
+    &--right-hover:hover {
+      min-height: 124px;
+    }
   }
 }
 
 .product__list-link-interior {
   position: absolute;
   right: 36px;
-  bottom: 17px;
+  top: 23px;
   opacity: 0.5;
 
   @include viewport--md {
-    bottom: 27px;
+    top: 29px;
   }
 }
 
 .product__list-link-toy {
   position: absolute;
   right: 27px;
-  bottom: 22px;
+  top: 22px;
   opacity: 0.5;
 
   @include viewport--md {
     right: 34px;
-    bottom: 27px;
+    top: 30px;
   }
 }

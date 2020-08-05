@@ -5,6 +5,16 @@
   color: $color-brown;
   text-transform: uppercase;
   background-color: $color-transparent;
+  cursor: pointer;
 
   border: 2px solid $color-brown;
+
+  &:hover {
+    color: $color-white;
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
+  &:active {
+    color: rgba($color: $color-white, $alpha: 0.3);
+  }
 }

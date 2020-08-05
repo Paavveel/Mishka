@@ -22,10 +22,19 @@
 
   width: 86px;
   height: 35px;
+  cursor: pointer;
 
   background-image: url("../../img/logo-mobile.svg");
   background-repeat: no-repeat;
   transform: translateX(-49.6%);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include viewport--md {
     position: absolute;

@@ -1,7 +1,15 @@
 .about {
+  padding-bottom: 35px;
+
+  @include viewport--md {
+    padding-bottom: 83px;
+  }
+
   @include viewport--lg {
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 3px;
+    padding-bottom: 90px;
   }
 }
 
