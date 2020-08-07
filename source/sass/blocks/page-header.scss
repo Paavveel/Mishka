@@ -28,6 +28,10 @@
   background-repeat: no-repeat;
   transform: translateX(-49.6%);
 
+  &--main {
+    pointer-events: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -75,6 +79,7 @@
   background-color: $color-transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 
   @include viewport--md {
     display: none;

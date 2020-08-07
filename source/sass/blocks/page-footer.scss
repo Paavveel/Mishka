@@ -17,6 +17,10 @@
   display: none;
   cursor: pointer;
 
+  &--main {
+    pointer-events: none;
+  }
+
   @include viewport--md {
     margin-right: 80px;
 

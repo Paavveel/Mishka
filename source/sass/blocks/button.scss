@@ -16,5 +16,11 @@
 
   &:active {
     color: rgba($color: $color-white, $alpha: 0.3);
+    background: linear-gradient(0deg, #444444, #444444);
+  }
+
+  &:focus {
+    color: rgba($color: $color-white, $alpha: 0.3);
+    background: linear-gradient(0deg, #444444, #444444);
   }
 }
