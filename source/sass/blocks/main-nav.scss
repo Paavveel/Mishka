@@ -1,6 +1,6 @@
 .main-nav {
   position: absolute;
-  top: 75px;
+  top: 78px;
   left: 0;
 
   display: none;
@@ -39,55 +39,138 @@
   padding: 0;
 
   list-style: none;
+  z-index: 1;
+  background-color: $color-white;
+
+  @include viewport--md {
+    background-color: $color-transparent;
+  }
 }
-/*
+
 .main-nav__inner-item,
 .main-nav__help-item {
   box-shadow: 0 1px 0 $color-grey, inset 0 1px 0 $color-grey;
-}
+  min-height: 79px;
+  padding: 30px 22px 10px 76px;
 
-*/
+  @include viewport--md {
+    box-shadow: none;
+    padding: 0;
+  }
+}
 
 .main-nav__inner-item-link,
 .main-nav__help-item-link {
   display: block;
   height: fit-content;
+  width: fit-content;
 
   font-weight: bold;
   font-size: 17px;
   color: $color-black;
 }
 
+.main-nav__inner-item-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include viewport--md {
+    font-size: 15px;
+
+    &--search {
+      font-size: 0;
+    }
+  }
+
+  @include viewport--lg {
+    &--fontsize {
+      font-size: 17px;
+    }
+  }
+}
+
+.main-nav__help-item-link {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:hover .main-nav__help-item-link-card-icon {
+    fill: $color-green;
+  }
+
+  &:hover .main-nav__help-item-link-search-icon {
+    fill: $color-green;
+  }
+
+  &:active .main-nav__help-item-link-card-icon {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+
+  &:active .main-nav__help-item-link-search-icon {
+    opacity: 0.3;
+    fill: $color-green;
+  }
+
+  @include viewport--md {
+    &--search {
+      font-size: 0;
+    }
+  }
+}
+
 .main-nav__inner-list {
   @include viewport--md {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 48%;
 
     transform: translateY(89px);
   }
 
   @include viewport--lg {
-    width: 40%;
+    width: 45%;
 
     transform: translateY(0);
   }
 }
 
 .main-nav__inner-item {
-  padding-left: 76px;
-
   @include viewport--md {
     display: flex;
-    margin-right: 20px;
-    padding-left: 0;
+    width: 45%;
+
+    padding-top: 22px;
+
+    &--catalog {
+      margin-right: 24px;
+    }
   }
 
   @include viewport--lg {
-    align-items: center;
-    width: 200px;
+    width: 220px;
     margin-right: 0;
     padding-right: 20px;
+
+    &--catalog {
+      padding-top: 34px;
+      width: 184px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &--form {
+      padding-top: 34px;
+      padding-left: 37px;
+    }
   }
 }
 
@@ -103,25 +186,57 @@
   @include viewport--md {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 50%;
+
+    width: 52%;
   }
 
   @include viewport--lg {
-    width: 40%;
+    width: 33.2%;
   }
 }
 
 .main-nav__help-item {
-  padding-left: 76px;
+  position: relative;
 
   @include viewport--md {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+
     min-height: 89px;
     margin-left: 17px;
     padding-left: 0;
+
+    &--search {
+      width: 82px;
+      margin-left: 0;
+      border-left: 1px solid rgba($color: #000000, $alpha: 0.1);
+      border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+    }
+
+    &--card {
+      padding-top: 36px;
+      width: 71.4%;
+    }
+  }
+}
+
+.main-nav__help-item-link-search-icon {
+  position: absolute;
+  left: 31px;
+
+  @include viewport--md {
+    left: 32px;
+    top: 36px;
+  }
+}
+
+.main-nav__help-item-link-card-icon {
+  position: absolute;
+  left: 31px;
+
+  @include viewport--md {
+    left: 15px;
+    top: 35px;
   }
 }
 
@@ -132,5 +247,6 @@
     display: flex;
     align-items: flex-start;
     width: 100%;
+    padding-top: 22px;
   }
 }

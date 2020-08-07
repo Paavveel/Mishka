@@ -1,11 +1,31 @@
 .about {
+  padding-bottom: 35px;
+
+  @include viewport--md {
+    padding-bottom: 83px;
+  }
+
   @include viewport--lg {
-    padding: 0 227px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 3px;
+    padding-bottom: 90px;
+  }
+}
+
+.about__top-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__inner {
+  @include viewport--lg {
+    padding: 0 176px;
   }
 }
 
 .about__heading {
-  margin: 20px 0;
+  margin: 31px 0 15px;
 
   font-weight: bold;
   font-size: 25px;
@@ -14,11 +34,13 @@
   @include viewport--md {
     font-size: 43px;
     line-height: 50px;
+    margin: 57px 0 15px;
   }
 
   @include viewport--lg {
     font-size: 53px;
     line-height: 57px;
+    margin: 66px 0 15px;
   }
 }
 
@@ -39,5 +61,98 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  padding: 20px 0;
+
+  @include viewport--md {
+    font-size: 20px;
+    line-height: 22px;
+    border: 1px solid transparent;
+  }
+}
+
+.about__item .about__item-flower {
+  margin: 28px 0 18px 8px;
+}
+
+.about__item .about__item-money {
+  margin: 28px 0 28px 0;
+
+  @include viewport--md {
+    margin: 51px 0 28px 0;
+  }
+}
+
+.about__item .about__item-heart {
+  margin: 33px 0 23px 8px;
+
+  @include viewport--md {
+    margin: 55px 0 23px 8px;
+  }
+}
+
+.about__item .about__item-ball {
+  margin: 31px 0 18px 4px;
+}
+
+.about__item .about__item-rocket {
+  margin: 31px 0 27px -5px;
+
+  @include viewport--md {
+    margin: 54px 0 27px -5px;
+  }
+}
+
+.about__item .about__item-gift {
+  margin: 31px 0 21px 3px;
+
+  @include viewport--md {
+    margin: 54px 0 21px 3px;
+  }
+}
+
+.about__list li:nth-of-type(1) {
+  width: 183px;
+
+  @include viewport--md {
+    width: 200px;
+  }
+}
+
+.about__list li:nth-of-type(2) {
+  width: 203px;
+
+  @include viewport--md {
+    width: 220px;
+  }
+}
+
+.about__list li:nth-of-type(3) {
+  width: 184px;
+
+  @include viewport--md {
+    width: 206px;
+  }
+}
+
+.about__list li:nth-of-type(4) {
+  width: 218px;
+
+  @include viewport--md {
+    width: 240px;
+  }
+}
+
+.about__list li:nth-of-type(5) {
+  width: 260px;
+
+  @include viewport--md {
+    width: 280px;
+  }
+}
+
+.about__list li:nth-of-type(6) {
+  width: 218px;
+
+  @include viewport--md {
+    width: 240px;
+  }
 }

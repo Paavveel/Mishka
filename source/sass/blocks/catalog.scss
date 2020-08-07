@@ -1,5 +1,13 @@
 .catalog {
   padding-top: 30px;
+
+  @include viewport--md {
+    padding-top: 66px;
+  }
+
+  @include viewport--lg {
+    padding-top: 109px;
+  }
 }
 
 .catalog__product-list {
@@ -22,6 +30,14 @@
 
 .catalog__product-item {
   margin-bottom: 30px;
+
+  &:hover .catalog__product-about {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .catalog__product-about {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @include viewport--md {
     display: grid;
@@ -50,6 +66,10 @@
   /*  Временная высота для выравнивания */
   @include viewport--md {
     min-height: 225px;
+  }
+
+  @include viewport--lg {
+    min-height: 198px;
   }
 }
 
@@ -119,20 +139,45 @@
 }
 
 .catalog__product-name {
-  margin: 28px 28px 17px;
+  margin: 28px 28px 6px;
 
   font-weight: bold;
   font-size: 17px;
   color: $color-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include viewport--md {
+    font-size: 20px;
+    margin: 28px 32px 6px;
+  }
+
+  @include viewport--lg {
+    margin: 28px 28px 6px;
+  }
 }
 
 .catalog__product-description {
   margin: 0 28px 17px;
-  padding-bottom: 10px;
 
   font-size: 13px;
   line-height: 30px;
   color: $color-brown;
+
+  @include viewport--md {
+    font-size: 15px;
+    margin: 0 32px 17px;
+  }
+
+  @include viewport--lg {
+    margin: 0 28px 0;
+  }
 }
 
 .catalog__product-bottom {
@@ -142,8 +187,31 @@
   padding: 22px 0 26px;
 
   border-top: 1px solid $color-grey;
+
+  @include viewport--md {
+    margin: 0 32px;
+  }
+
+  @include viewport--lg {
+    margin: 0 32px 0 26px;
+  }
 }
 
 .catalog__product-price {
   font-weight: bold;
+
+  @include viewport--md {
+    font-size: 17px;
+  }
+}
+
+.catalog__product-tobasket {
+  &:hover .catalog__product-tobasket-img {
+    fill: $color-green;
+  }
+
+  &:active .catalog__product-tobasket-img {
+    opacity: 0.3;
+    fill: $color-green;
+  }
 }

@@ -1,7 +1,7 @@
 .catalog-header {
   min-height: 177px;
-  padding: 0 30px;
-
+  display: flex;
+  flex-direction: column;
   background-color: $color-othergrey;
 
   @include viewport--md {
@@ -13,9 +13,20 @@
   }
 }
 
+.catalog-header-img {
+  display: none;
+
+  @include viewport--md {
+    display: block;
+    margin-top: auto;
+    margin-bottom: -1px;
+    width: 100%;
+  }
+}
+
 .catalog-header__title {
   margin: 0;
-  padding-top: 70px;
+  padding-top: 74px;
 
   font-weight: bold;
   font-size: 27px;
@@ -25,6 +36,7 @@
   @include viewport--md {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 103px;
   }
 
   @include viewport--lg {

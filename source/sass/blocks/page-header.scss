@@ -2,36 +2,48 @@
   position: relative;
 
   height: 79px;
-
+  box-shadow: 0 1px 0 $color-grey, inset 0 1px 0 $color-grey;
   background-color: $color-white;
 
   @include viewport--md {
     height: 89px;
   }
-}
-/*
-.page-header__top {
 
-  /* box-shadow: 0px 1px 0px $color-grey, inset 0px 1px 0px $color-grey;
+  @include viewport--lg {
+    height: 89px;
+    box-shadow: none;
+  }
 }
-*/
 
 .page-header__logo {
   position: absolute;
-  top: 21px;
-  left: 50%;
+  top: 22px;
+  left: 49.6%;
 
   width: 86px;
   height: 35px;
+  cursor: pointer;
 
   background-image: url("../../img/logo-mobile.svg");
   background-repeat: no-repeat;
-  transform: translateX(-50%);
+  transform: translateX(-49.6%);
+
+  &--main {
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include viewport--md {
     position: absolute;
     top: 23px;
-    left: 50px;
+    left: 48px;
 
     width: 113.01px;
     height: 45.96px;
@@ -62,8 +74,12 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 32px;
+  right: 31px;
+  background-color: $color-transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 
   @include viewport--md {
     display: none;

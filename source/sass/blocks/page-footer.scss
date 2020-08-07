@@ -15,6 +15,11 @@
 
 .page-footer__logo {
   display: none;
+  cursor: pointer;
+
+  &--main {
+    pointer-events: none;
+  }
 
   @include viewport--md {
     margin-right: 80px;
@@ -22,6 +27,15 @@
     display: block;
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  &:hover .page-footer__logo-img {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__logo-img {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }
 
@@ -36,18 +50,4 @@
   display: flex;
   justify-content: center;
   min-height: 80px;
-}
-
-.copyright__text {
-  height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0 10px;
-}
-
-.copyright__link {
-  height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0 10px;
 }

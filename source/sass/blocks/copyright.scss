@@ -2,4 +2,34 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 20px;
+
+  @include viewport--md {
+    margin-top: 67px;
+    margin-bottom: 0;
+  }
+}
+
+.copyright__link {
+  height: fit-content;
+  margin-top: 22px;
+  margin-left: 14px;
+
+  &:hover .copyright__link-img {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__link-img {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  @include viewport--md {
+    margin-top: 58px;
+
+    margin-left: 20px;
+  }
 }
