@@ -16,6 +16,10 @@
 .about__top-img {
   width: 100%;
   margin: 0 auto;
+
+  @include viewport--lg {
+    width: 1050px;
+  }
 }
 
 .about__inner {
