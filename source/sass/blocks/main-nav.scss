@@ -122,8 +122,14 @@
   }
 
   @include viewport--md {
+    position: relative;
+    padding-left: 63px;
+
     &--search {
       font-size: 0;
+      padding-left: 0;
+      height: 88px;
+      width: 80px;
     }
   }
 }
@@ -191,7 +197,7 @@
   }
 
   @include viewport--lg {
-    width: 33.2%;
+    width: 35.2%;
   }
 }
 
@@ -207,15 +213,16 @@
     padding-left: 0;
 
     &--search {
-      width: 82px;
-      margin-left: 0;
+      width: 84px;
+      margin-left: auto;
       border-left: 1px solid rgba($color: #000000, $alpha: 0.1);
       border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
     }
 
     &--card {
       padding-top: 36px;
-      width: 71.4%;
+      padding-left: 32px;
+      margin-left: 0;
     }
   }
 }
@@ -225,7 +232,7 @@
   left: 31px;
 
   @include viewport--md {
-    left: 32px;
+    left: 31px;
     top: 36px;
   }
 }
@@ -235,8 +242,8 @@
   left: 31px;
 
   @include viewport--md {
-    left: 15px;
-    top: 35px;
+    left: 0;
+    top: 0;
   }
 }
 

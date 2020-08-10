@@ -1,9 +1,27 @@
+.production {
+  padding-bottom: 58px;
+
+  @include viewport--md {
+    padding-bottom: 62px;
+  }
+
+  @include viewport--lg {
+    padding-bottom: 104px;
+  }
+}
+
 .production__inner {
   width: 260px;
   margin: 0 auto;
   position: relative;
 
-  margin-bottom: 58px;
+  &:hover .production__inner-bottom {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .production__inner-bottom {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @include viewport--md {
     width: 668px;
@@ -17,10 +35,27 @@
   }
 }
 
+.production__icon-video {
+  position: absolute;
+  top: 28px;
+  left: 34px;
+
+  @include viewport--md {
+    top: 488px;
+    left: 42px;
+  }
+
+  @include viewport--lg {
+    top: 42px;
+    left: 760px;
+  }
+}
+
 .production__title-top {
-  padding: 21px 0 26px;
+  padding: 21px 0 26px 91px;
   margin: 0;
   border: 1px solid $color-grey;
+  border-bottom: none;
   font-weight: bold;
   font-size: 17px;
 
@@ -37,8 +72,13 @@
   font-size: 17px;
 
   @include viewport--md {
+    margin: 41px 33px 14px 106px;
     font-size: 20px;
     display: block;
+  }
+
+  @include viewport--lg {
+    margin: 97px 0 14px 0;
   }
 }
 
@@ -81,42 +121,133 @@
 
 .production__inner-bottom {
   border: 1px solid $color-grey;
+  border-top: none;
   order: 2;
 
   @include viewport--md {
     display: flex;
     flex-direction: column;
   }
+
+  @include viewport--lg {
+    padding: 0 58px 0 79px;
+    border-top: 1px solid $color-grey;
+  }
 }
 
 .production__text {
-  margin: 35px 0 41px;
+  margin: 0;
+  padding: 34px 0 41px 34px;
 
   font-size: 13px;
   color: $color-brown;
 
   @include viewport--md {
+    padding: 10px 20px 40px 39px;
     font-size: 15px;
     line-height: 30px;
     order: 3;
   }
+
+  @include viewport--lg {
+    padding: 13px 0 50px 0;
+  }
 }
 
 .production__video-button {
+  padding: 0;
   border: none;
   background-color: $color-transparent;
   position: absolute;
-  top: 108px;
-  left: 71px;
+  top: 130px;
+  left: 80px;
+  cursor: pointer;
+
+  &:hover {
+    top: 122.5px;
+    left: 70px;
+  }
+
+  &:focus {
+    top: 122.5px;
+    left: 70px;
+  }
+
+  &:active {
+    top: 136.5px;
+    left: 86px;
+  }
+
+  &:hover svg {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:focus svg {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active svg {
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
+  }
 
   @include viewport--md {
-    top: 190px;
-    left: 271px;
+    top: 189px;
+    left: 283px;
+
+    &:hover {
+      top: 181.5px;
+      left: 273px;
+    }
+
+    &:focus {
+      top: 181.5px;
+      left: 273px;
+    }
+
+    &:active {
+      top: 195.5px;
+      left: 289px;
+    }
+  }
+
+  @include viewport--lg {
+    left: 291px;
+
+    &:hover {
+      left: 281px;
+    }
+
+    &:focus {
+      left: 281px;
+    }
+
+    &:active {
+      left: 297px;
+    }
   }
 }
 
 .production__button {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  width: 192px;
+  margin-bottom: 32px;
+
   @include viewport--md {
+    margin-bottom: 45px;
+    width: 584px;
     order: 4;
+  }
+
+  @include viewport--lg {
+    margin: 0;
+    margin-bottom: 0;
+    width: auto;
   }
 }
