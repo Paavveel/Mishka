@@ -1,6 +1,4 @@
 .contacts {
-  position: relative;
-
   @include viewport--lg {
     padding-bottom: 96px;
   }
@@ -22,16 +20,18 @@
     display: block;
     position: absolute;
     right: 53px;
-    top: 62px;
+    top: -24px;
   }
 
   @include viewport--lg {
     left: 113px;
-    top: 154px;
+    top: 133px;
   }
 }
 
 .contacts__inner {
+  position: relative;
+
   @include viewport--lg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

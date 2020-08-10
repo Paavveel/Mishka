@@ -111,14 +111,6 @@
   margin-left: -60px;
   top: 0;
 
-  &:hover {
-    border: 2px solid $form-border;
-  }
-
-  &:active {
-    border: 2px solid #c7c7c7;
-  }
-
   @include viewport--md {
     width: 52px;
     height: 52px;
@@ -152,14 +144,6 @@
   border: 2px solid $color-brown;
   margin-left: -61px;
   top: 0;
-
-  &:hover {
-    border: 2px solid $form-border;
-  }
-
-  &:active {
-    border: 2px solid #c7c7c7;
-  }
 
   @include viewport--md {
     width: 54px;
@@ -306,6 +290,42 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+
+  &:hover {
+    color: $form-border;
+  }
+
+  &:focus {
+    color: $form-border;
+  }
+
+  &:active {
+    color: #c7c7c7;
+  }
+
+  &:hover .form__radio-img {
+    border: 2px solid $form-border;
+  }
+
+  &:focus .form__radio-img {
+    border: 2px solid $form-border;
+  }
+
+  &:active .form__radio-img {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:hover .form__checkbox-img {
+    border: 2px solid $form-border;
+  }
+
+  &:focus .form__checkbox-img {
+    border: 2px solid $form-border;
+  }
+
+  &:active .form__checkbox-img {
+    border: 2px solid #c7c7c7;
+  }
 
   &--radio {
     padding-left: 60px;
