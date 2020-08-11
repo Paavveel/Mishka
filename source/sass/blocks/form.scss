@@ -286,22 +286,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
+  cursor: pointer;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-
-  &:hover {
-    color: $form-border;
-  }
-
-  &:focus {
-    color: $form-border;
-  }
-
-  &:active {
-    color: #c7c7c7;
-  }
 
   &:hover .form__radio-img {
     border: 2px solid $form-border;
@@ -332,12 +320,14 @@
     flex-direction: row;
     margin-bottom: 15px;
     padding-top: 9px;
+    width: fit-content;
   }
 
   &--checkbox {
     padding-left: 61px;
     min-height: 61px;
     padding-top: 14px;
+    width: fit-content;
   }
 
   &--name-margin {

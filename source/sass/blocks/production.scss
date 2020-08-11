@@ -82,40 +82,14 @@
   }
 }
 
-.production__video-mobile {
-  display: block;
-
+.production__video-img {
   @include viewport--md {
-    display: none;
-  }
-
-  @include viewport--lg {
-    display: none;
-  }
-}
-
-.production__video-tablet {
-  display: none;
-
-  @include viewport--md {
-    display: block;
     order: 1;
   }
 
   @include viewport--lg {
-    display: none;
-  }
-}
-
-.production__video-desktop {
-  display: none;
-
-  @include viewport--md {
-    display: none;
-  }
-
-  @include viewport--lg {
-    display: block;
+    width: 2416px;
+    height: 455px;
   }
 }
 
@@ -171,11 +145,13 @@
   &:focus {
     top: 122.5px;
     left: 70px;
+    outline: none;
   }
 
   &:active {
     top: 136.5px;
     left: 86px;
+    outline: none;
   }
 
   &:hover svg {
