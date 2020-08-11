@@ -6,6 +6,11 @@
     padding-bottom: 69px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 349px auto;
+    }
   }
 
   @include viewport--lg {
@@ -32,6 +37,11 @@
 
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 349px auto;
+    }
   }
 }
 

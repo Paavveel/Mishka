@@ -6,16 +6,31 @@
   background-repeat: no-repeat;
   background-position: center -17px;
 
+  @include retina {
+    background-image: url("../../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+
   @include viewport--md {
     min-height: 746px;
     display: flex;
     flex-direction: column;
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-position: center 0;
+
+    @include retina {
+      background-image: url("../../img/hero-tablet@2x.jpg");
+      background-size: 1148px auto;
+    }
   }
 
   @include viewport--lg {
     background-image: url("../../img/hero-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../../img/hero-desktop@2x.jpg");
+      background-size: 1148px auto;
+    }
   }
 }
 
