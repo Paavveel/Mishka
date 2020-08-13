@@ -230,6 +230,7 @@
 .main-nav__help-item-link-search-icon {
   position: absolute;
   left: 31px;
+  fill: #cccccc;
 
   @include viewport--md {
     left: 31px;
@@ -240,6 +241,7 @@
 .main-nav__help-item-link-card-icon {
   position: absolute;
   left: 31px;
+  fill: #cccccc;
 
   @include viewport--md {
     left: 0;
