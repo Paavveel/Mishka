@@ -157,6 +157,8 @@
 }
 
 .catalog__product-tobasket {
+  fill: #cccccc;
+
   &:hover .catalog__product-tobasket-img {
     fill: $color-green;
   }
