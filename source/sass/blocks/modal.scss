@@ -1,0 +1,155 @@
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 110;
+
+  background-color: $color-white;
+  visibility: hidden;
+}
+
+.modal__body {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 130;
+
+  width: 320px;
+  margin: auto;
+  padding: 28.5px 29px 46px;
+
+  background-color: $color-white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translateY(-50%);
+  visibility: hidden;
+
+  @include viewport--md {
+    width: 566px;
+    padding: 37.5px 106px 46px;
+  }
+}
+
+.modal__overlay--show {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.modal__overlay--close {
+  visibility: hidden;
+}
+
+.modal__body--show {
+  visibility: visible;
+}
+
+.modal__body--close {
+  visibility: hidden;
+}
+
+.modal__body-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__body-title {
+  margin: 0;
+  padding: 0 49px 0;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include viewport--md {
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__body-description {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 21.5px;
+  padding: 0;
+
+  line-height: 30px;
+  text-align: center;
+  color: $color-brown;
+
+  @include viewport--md {
+    margin-top: 11px;
+    margin-bottom: 19.5px;
+
+    font-size: 17px;
+  }
+}
+
+.modal__body-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal__body-size {
+  &:checked + .modal__body-size-img {
+    border: 2px solid $form-border;
+  }
+}
+
+.modal__body-size-img {
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding-top: 18px;
+
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-brown;
+
+  border: 2px solid rgba($color: $color-brown, $alpha: 0.1);
+
+  @include viewport--md {
+    width: 112px;
+  }
+
+  &:hover {
+    border: 2px solid rgba($color: $color-brown, $alpha: 0.3);
+  }
+}
+
+.modal__body-button {
+  margin-top: 31px;
+  padding: 17px;
+
+  font-weight: bold;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: $color-green;
+  border: none;
+
+  &:hover {
+    background-color: #6ee2cb;
+  }
+
+  &:focus {
+    background-color: #6ee2cb;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+  }
+}

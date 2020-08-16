@@ -202,7 +202,13 @@
         </div>
         <div class="product-week__picture"></div>
         <span class="product-week__price">Цена: 990 руб.</span>
-        <button class="button product-week__button">Заказать</button>
+        <button
+          type="button"
+          class="button product-week__button"
+          data-modal="modal_1"
+        >
+          Заказать
+        </button>
       </section>
       <section class="about">
         <svg class="about__top-img" width="1150px" height="23px">
@@ -432,6 +438,54 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__overlay" data-close=""></div>
+      <div class="modal__body" id="modal_1">
+        <h2 class="modal__body-title">Добавить в корзину</h2>
+        <p class="modal__body-description">Выберите размер:</p>
+        <form
+          class="modal__body-form"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+        >
+          <ul class="modal__body-list">
+            <li class="modal__body-item">
+              <label
+                ><input
+                  class="modal__body-size visually-hidden"
+                  type="radio"
+                  name="product-size"
+                  value="S"
+                  checked
+                /><span class="modal__body-size-img">S</span></label
+              >
+            </li>
+            <li class="modal__body-item">
+              <label
+                ><input
+                  class="modal__body-size visually-hidden"
+                  type="radio"
+                  name="product-size"
+                  value="M"
+                /><span class="modal__body-size-img">M</span></label
+              >
+            </li>
+            <li class="modal__body-item">
+              <label
+                ><input
+                  class="modal__body-size visually-hidden"
+                  type="radio"
+                  name="product-size"
+                  value="L"
+                /><span class="modal__body-size-img">L</span></label
+              >
+            </li>
+          </ul>
+          <button class="modal__body-button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
