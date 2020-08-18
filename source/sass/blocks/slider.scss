@@ -1,0 +1,18 @@
+.slider__item {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+  &--active {
+    display: block;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

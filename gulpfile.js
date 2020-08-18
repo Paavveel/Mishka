@@ -8,10 +8,17 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
-const imageminJpegtran = require("imagemin-jpegtran");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+
+// clean Build folder
+
+const clean = () => {
+  return del("build");
+};
+
+exports.clean = clean;
 
 // Styles
 
@@ -25,13 +32,13 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 };
 
 exports.styles = styles;
 
-// Images
+// Optimize Images
 
 const images = () => {
   return gulp
@@ -39,7 +46,7 @@ const images = () => {
     .pipe(
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
-        imageminJpegtran({ progressive: true }),
+        imagemin.mozjpeg({ quality: 75, progressive: true }),
         imagemin.svgo(),
       ])
     );
@@ -47,30 +54,30 @@ const images = () => {
 
 exports.images = images;
 
-// WebP
+// Make WebP images
 
-const webpmod = () => {
+const makewebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));
 };
 
-exports.webpmod = webpmod;
+exports.makewebp = makewebp;
 
-// SvgSprite
+//Make Svg sprite
 
 const sprite = () => {
   return gulp
     .src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 };
 
 exports.sprite = sprite;
 
-// Copy
+// Copy fonts, pictures, scripts to Build folder
 
 const copy = () => {
   return gulp
@@ -89,18 +96,6 @@ const copy = () => {
 };
 
 exports.copy = copy;
-
-// Del Build
-
-const clean = () => {
-  return del("build");
-};
-
-exports.clean = clean;
-
-// Build
-
-exports.build = gulp.series(clean, copy, styles, sprite);
 
 // Server
 
@@ -125,4 +120,10 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
+// npm start - default
+
 exports.default = gulp.series(styles, server, watcher);
+
+// Build
+
+exports.build = gulp.series(clean, styles, images, copy);

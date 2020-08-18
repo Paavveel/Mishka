@@ -32,7 +32,7 @@
       type="font/woff"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page-body">
@@ -52,12 +52,12 @@
         >
           <span class="page-header__toggle-icone-open">
             <svg width="19.958px" height="14px" aria-hidden="true">
-              <use xlink:href="sprite.svg#icon-menu-open"></use>
+              <use xlink:href="img/sprite.svg#icon-menu-open"></use>
             </svg>
           </span>
           <span class="page-header__toggle-icone-close">
             <svg width="20.514px" height="20.512px" aria-hidden="true">
-              <use xlink:href="sprite.svg#icon-menu-close"></use>
+              <use xlink:href="img/sprite.svg#icon-menu-close"></use>
             </svg>
           </span>
         </button>
@@ -98,7 +98,7 @@
                   height="17.6px"
                   role="img"
                 >
-                  <use xlink:href="sprite.svg#icon-search"></use>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
                 Поиск по сайту</a
               >
@@ -111,7 +111,7 @@
                   height="18.849px"
                   role="img"
                 >
-                  <use xlink:href="sprite.svg#icon-card"></use>
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста</a
               >
@@ -147,7 +147,7 @@
                   height="62.411px"
                   role="img"
                 >
-                  <use xlink:href="sprite.svg#icon-interior"></use>
+                  <use xlink:href="img/sprite.svg#icon-interior"></use>
                 </svg>
               </a>
             </li>
@@ -162,7 +162,7 @@
                   height="59.62px"
                   role="img"
                 >
-                  <use xlink:href="sprite.svg#icon-toy"></use>
+                  <use xlink:href="img/sprite.svg#icon-toy"></use>
                 </svg>
               </a>
             </li>
@@ -174,7 +174,7 @@
           height="34px"
           aria-hidden="true"
         >
-          <use xlink:href="sprite.svg#white-line"></use>
+          <use xlink:href="img/sprite.svg#icon-bg-zigzag-fill"></use>
         </svg>
       </section>
       <section class="product-week container">
@@ -212,7 +212,7 @@
       </section>
       <section class="about">
         <svg class="about__top-img" width="1150px" height="23px">
-          <use xlink:href="sprite.svg#grey-line"></use>
+          <use xlink:href="img/sprite.svg#icon-bg-zigzag-line"></use>
         </svg>
         <div class="about__inner container">
           <h2 class="about__heading">Коротко о нас:</h2>
@@ -284,13 +284,32 @@
         <div class="reviews__inner slider">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item slider__item--active">
               <p class="reviews__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко
                 такого количества лайков, как у популярных инстамамочек. В
                 отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
                 фотографии сразу стали более стильными, а также набирают больше
                 лайков!
+              </p>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Анастасия Красильникова</p>
+                <p class="reviews__author-nickname">@misssssiskras</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">
+                Всем привет! И хорошего дня ;)
+              </p>
+              <div class="reviews__author-info">
+                <p class="reviews__author-name">Павел Томилин</p>
+                <p class="reviews__author-nickname">@paveltomilin</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко
+                такого количества лайков!
               </p>
               <div class="reviews__author-info">
                 <p class="reviews__author-name">Анастасия Красильникова</p>
@@ -304,7 +323,7 @@
                 aria-label="Предыдущий отзыв"
               >
                 <svg width="50px" height="26.003px" aria-hidden="true">
-                  <use xlink:href="sprite.svg#icon-left-arrow"></use>
+                  <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
                 </svg>
               </button>
               <button
@@ -313,7 +332,7 @@
                 aria-label="Следующий отзыв"
               >
                 <svg width="50px" height="26.003px" aria-hidden="true">
-                  <use xlink:href="sprite.svg#icon-right-arrow"></use>
+                  <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
                 </svg>
               </button>
             </div>
@@ -328,7 +347,7 @@
           height="23px"
           aria-hidden="true"
         >
-          <use xlink:href="sprite.svg#grey-line"></use>
+          <use xlink:href="img/sprite.svg#icon-bg-zigzag-line"></use>
         </svg>
         <div class="contacts__inner container">
           <img
@@ -380,7 +399,7 @@
             height="34.056px"
             role="img"
           >
-            <use xlink:href="sprite.svg#footer-logo-mishka"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__social social">
@@ -392,7 +411,7 @@
                 height="21.334px"
                 role="img"
               >
-                <use xlink:href="sprite.svg#icon-instagram"></use></svg
+                <use xlink:href="img/sprite.svg#icon-insta"></use></svg
             ></a>
           </li>
           <li class="social__item">
@@ -403,7 +422,7 @@
                 height="27.718px"
                 role="img"
               >
-                <use xlink:href="sprite.svg#icon-facebook"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -415,7 +434,7 @@
                 height="20.168px"
                 role="img"
               >
-                <use xlink:href="sprite.svg#icon-twitter"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -432,12 +451,13 @@
               height="34.09px"
               role="img"
             >
-              <use xlink:href="sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+
     <section class="modal">
       <div class="modal__overlay" data-close=""></div>
       <div class="modal__body" id="modal_1">
@@ -487,5 +507,6 @@
     </section>
     <script src="js/index.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
