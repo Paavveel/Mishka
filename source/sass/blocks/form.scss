@@ -40,12 +40,16 @@
   padding: 0 30px;
   border: none;
 
+  &--type {
+    margin-bottom: 27px;
+  }
+
   &--color {
     margin-bottom: 13px;
   }
 
   &--fio {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 
     @include viewport--md {
       margin-top: 36px;
@@ -104,12 +108,12 @@
 
 .form__radio-img {
   position: absolute;
-  width: 38px;
-  height: 38px;
-  border: 2px solid $color-brown;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444;
   border-radius: 50%;
   margin-left: -60px;
-  top: 0;
+  top: 4px;
 
   @include viewport--md {
     width: 52px;
@@ -264,6 +268,10 @@
 
   list-style: none;
 
+  &--type li {
+    min-height: 49px;
+  }
+
   &--type {
     margin-top: 24px;
 
@@ -319,8 +327,8 @@
   &--radio {
     padding-left: 60px;
     flex-direction: row;
-    margin-bottom: 15px;
-    padding-top: 9px;
+    margin-bottom: 7px;
+    padding-top: 13px;
     width: fit-content;
   }
 
@@ -332,7 +340,7 @@
   }
 
   &--name-margin {
-    margin-top: 29px;
+    margin-top: 27px;
     height: 68px;
     justify-content: space-between;
 
@@ -371,7 +379,7 @@
   }
 
   &--phone-margin {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 36px;
     justify-content: space-between;
 
@@ -383,7 +391,7 @@
   }
 
   &--email-margin {
-    margin-top: 5px;
+    margin-top: 3px;
     justify-content: space-between;
 
     @include viewport--md {

@@ -3,6 +3,23 @@
 
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
+
+  @include viewport--md {
+    & li:nth-child(1) {
+      margin-top: 57px;
+      margin-bottom: 0;
+    }
+
+    & li:nth-child(2) {
+      margin-top: 54px;
+      margin-bottom: 0;
+    }
+
+    & li:nth-child(3) {
+      margin-top: 57px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .social__item {
@@ -11,6 +28,9 @@
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
+
+  @include viewport--md {
+  }
 }
 
 .social__link {
