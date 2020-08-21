@@ -9,7 +9,7 @@
 .form__subtitle {
   margin-top: 19px;
   margin-bottom: 29px;
-  padding: 0 45px 0 30px;
+  padding: 0 33px 0 0;
 
   font-size: 13px;
   color: $color-brown;
@@ -19,7 +19,7 @@
     line-height: 30px;
     margin-top: 55px;
     margin-bottom: 61px;
-    padding: 0 85px 0 50px;
+    padding: 0 85px 0 0;
   }
 
   @include viewport--lg {
@@ -37,7 +37,7 @@
 .form__container {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0 30px;
+
   border: none;
 
   &--type {
@@ -52,19 +52,27 @@
     margin-bottom: 37px;
 
     @include viewport--md {
-      margin-top: 36px;
+      margin-top: 49px;
+      margin-bottom: 35px;
     }
   }
 
   &--contact {
     margin-bottom: 36px;
+
+    @include viewport--md {
+      background-color: $color-othergrey;
+      padding-top: 26px;
+      padding-bottom: 50px;
+      margin-bottom: 0;
+    }
   }
 
   &--extra {
     margin-bottom: 17px;
 
     @include viewport--md {
-      margin-top: 14px;
+      margin-top: 50px;
       margin-bottom: 53px;
     }
 
@@ -75,7 +83,7 @@
 
   @include viewport--md {
     display: grid;
-    padding: 0 50px;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
@@ -83,6 +91,14 @@
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__inner {
+  @include viewport--md {
+    &--greybg {
+      background-color: $color-othergrey;
+    }
   }
 }
 
@@ -95,7 +111,7 @@
     background-position: center;
 
     @include viewport--md {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle r='11' cx='11' cy='11' fill='%2362D1BA' /%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle r='10' cx='10' cy='10' fill='%2362D1BA' /%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -116,9 +132,15 @@
   top: 4px;
 
   @include viewport--md {
-    width: 52px;
-    height: 52px;
-    margin-left: -80px;
+    width: 50px;
+    height: 49px;
+    margin-left: -77px;
+    top: 0;
+    margin-top: 2px;
+  }
+
+  @include viewport--lg {
+    margin-left: -79px;
   }
 }
 
@@ -150,19 +172,19 @@
   top: 0;
 
   @include viewport--md {
-    width: 54px;
+    width: 52px;
     height: 52px;
     margin-left: -82px;
+  }
+
+  @include viewport--lg {
+    top: -2px;
   }
 }
 
 @include viewport--md {
   .form__container-list--type {
     grid-column: 2 / 4;
-  }
-
-  .form__container--color {
-    background-color: $color-othergrey;
   }
 
   .form__container-list--color {
@@ -175,12 +197,6 @@
 
   .form__name--grid {
     grid-column: 2 / 5;
-  }
-
-  .form__container--contact {
-    background-color: $color-othergrey;
-    padding-top: 26px;
-    padding-bottom: 50px;
   }
 
   .form__tel,
@@ -270,6 +286,10 @@
 
   &--type li {
     min-height: 49px;
+
+    @include viewport--md {
+      min-height: 76px;
+    }
   }
 
   &--type {
@@ -284,8 +304,12 @@
     margin-top: 22px;
 
     @include viewport--md {
-      margin-top: 47px;
-      margin-bottom: 24px;
+      margin-top: 48px;
+      margin-bottom: 14px;
+    }
+
+    @include viewport--lg {
+      margin-bottom: 11px;
     }
   }
 }
@@ -424,8 +448,14 @@
       min-height: fit-content;
       width: fit-content;
       padding-left: 82px;
-      padding-top: 16px;
-      padding-bottom: 43px;
+      padding-top: 18px;
+      padding-bottom: 40px;
+    }
+  }
+
+  @include viewport--lg {
+    &--checkbox {
+      padding-top: 19px;
     }
   }
 }
@@ -584,6 +614,8 @@
   }
 
   @include viewport--lg {
+    margin: 0 auto;
+    width: 1150px;
     display: grid;
     flex-direction: row;
 
