@@ -63,7 +63,7 @@
 .product__slogan {
   margin: 0;
 
-  padding: 73px 30px 20px;
+  padding: 73px 32px 20px;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
@@ -80,6 +80,7 @@
   @include viewport--lg {
     font-size: 53px;
     line-height: 57px;
+    padding: 157px 144px 20px;
   }
 }
 
