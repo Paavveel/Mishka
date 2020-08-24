@@ -22,9 +22,9 @@
   }
 
   @include viewport--lg {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 51px;
     width: 1050px;
   }
 }
