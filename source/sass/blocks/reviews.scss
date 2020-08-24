@@ -4,11 +4,11 @@
   @include viewport--md {
     min-height: 457px;
     padding-bottom: 69px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("img/review@1x.jpg");
     background-repeat: no-repeat;
 
     @include retina {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("img/review@2x.jpg");
       background-size: 349px auto;
     }
   }
@@ -35,11 +35,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("img/review@1x.jpg");
     background-repeat: no-repeat;
 
     @include retina {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("img/review@2x.jpg");
       background-size: 349px auto;
     }
   }
