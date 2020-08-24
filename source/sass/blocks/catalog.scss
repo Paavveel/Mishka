@@ -22,8 +22,9 @@
   }
 
   @include viewport--lg {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 51px;
     width: 1050px;
   }
 }
@@ -158,6 +159,7 @@
 
 .catalog__product-tobasket {
   fill: #cccccc;
+  cursor: pointer;
 
   &:hover .catalog__product-tobasket-img {
     fill: $color-green;

@@ -2,11 +2,11 @@
   padding-bottom: 58px;
 
   @include viewport--md {
-    padding-bottom: 62px;
+    padding-bottom: 64px;
   }
 
   @include viewport--lg {
-    padding-bottom: 104px;
+    padding-bottom: 105px;
   }
 }
 
@@ -106,6 +106,7 @@
   @include viewport--lg {
     padding: 0 58px 0 79px;
     border-top: 1px solid $color-grey;
+    width: 950px;
   }
 }
 

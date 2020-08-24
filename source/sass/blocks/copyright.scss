@@ -8,8 +8,9 @@
   padding-right: 20px;
 
   @include viewport--md {
-    margin-top: 67px;
+    margin-top: 59px;
     margin-bottom: 0;
+    padding-right: 14px;
   }
 }
 
@@ -29,7 +30,7 @@
   }
 
   @include viewport--md {
-    margin-top: 58px;
+    margin-top: 51px;
 
     margin-left: 20px;
   }
