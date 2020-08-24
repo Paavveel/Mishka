@@ -120,11 +120,11 @@
   height: 315px;
   margin: 0 auto;
 
-  background-image: url("img/triple-set-mobile@1x.jpg");
+  background-image: url("/img/triple-set-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   @include retina {
-    background-image: url("img/triple-set-mobile@2x.jpg");
+    background-image: url("/img/triple-set-mobile@2x.jpg");
     background-size: 260px auto;
   }
 
@@ -132,13 +132,13 @@
     width: 333px;
     height: 404px;
 
-    background-image: url("img/triple-set-tablet@1x.jpg");
+    background-image: url("/img/triple-set-tablet@1x.jpg");
 
     grid-column: 3 / 5;
     grid-row: 2 / 6;
 
     @include retina {
-      background-image: url("img/triple-set-tablet@2x.jpg");
+      background-image: url("/img/triple-set-tablet@2x.jpg");
       background-size: 333px auto;
     }
   }
@@ -147,13 +147,13 @@
     width: 525px;
     height: 636px;
 
-    background-image: url("img/triple-set-desktop@1x.jpg");
+    background-image: url("/img/triple-set-desktop@1x.jpg");
 
     grid-column: 4 / 7;
     grid-row: 1 / 6;
 
     @include retina {
-      background-image: url("img/triple-set-desktop@2x.jpg");
+      background-image: url("/img/triple-set-desktop@2x.jpg");
       background-size: 525px auto;
     }
   }
