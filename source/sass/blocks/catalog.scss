@@ -48,7 +48,8 @@
   }
 
   @include viewport--lg {
-    display: block;
+    flex-direction: column;
+    display: flex;
     width: 316px;
     margin-bottom: 57px;
   }
@@ -64,13 +65,14 @@
 
     grid-column: 2 / 5;
   }
-  /*  Временная высота для выравнивания */
+
   @include viewport--md {
     min-height: 225px;
   }
 
   @include viewport--lg {
     min-height: 198px;
+    flex-grow: 1;
   }
 }
 
@@ -93,6 +95,7 @@
 .catalog__product-name {
   margin: 28px 28px 6px;
 
+  padding-right: 20px;
   font-weight: bold;
   font-size: 17px;
   color: $color-black;
@@ -108,10 +111,13 @@
   @include viewport--md {
     font-size: 20px;
     margin: 28px 32px 6px;
+
+    padding-right: 40px;
   }
 
   @include viewport--lg {
     margin: 28px 28px 6px;
+    padding-right: 31px;
   }
 }
 
