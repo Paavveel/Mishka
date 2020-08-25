@@ -112,6 +112,7 @@
   width: 82px;
   height: 52px;
   padding-top: 18px;
+  cursor: pointer;
 
   font-size: 17px;
   line-height: 16px;
@@ -140,6 +141,7 @@
 
   background-color: $color-green;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: #6ee2cb;

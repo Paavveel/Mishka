@@ -8,6 +8,10 @@ if (nav) {
 }
 
 if (navToggle) {
+  navToggle.classList.remove("page-header__toggle--no-js");
+}
+
+if (navToggle) {
   navToggle.addEventListener("click", function (e) {
     e.preventDefault();
     nav.classList.toggle("main-nav--open");

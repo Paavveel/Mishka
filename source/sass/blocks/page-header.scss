@@ -69,6 +69,10 @@
   padding: 0;
   cursor: pointer;
 
+  &--no-js {
+    display: none;
+  }
+
   @include viewport--md {
     display: none;
   }
