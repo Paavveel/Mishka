@@ -155,10 +155,10 @@
     display: flex;
     width: 45%;
 
-    padding-top: 22px;
+    padding-top: 20px;
 
     &--catalog {
-      margin-right: 24px;
+      margin-right: 28px;
     }
   }
 
@@ -166,6 +166,7 @@
     width: 220px;
     margin-right: 0;
     padding-right: 20px;
+    padding-top: 19px;
 
     &--catalog {
       padding-top: 34px;
@@ -220,9 +221,15 @@
     }
 
     &--card {
-      padding-top: 36px;
-      padding-left: 32px;
+      padding-top: 34px;
+      padding-left: 20px;
       margin-left: 0;
+    }
+  }
+
+  @include viewport--lg {
+    &--card {
+      padding-left: 22px;
     }
   }
 }
@@ -244,7 +251,7 @@
   fill: #cccccc;
 
   @include viewport--md {
-    left: 0;
+    left: 12px;
     top: 0;
   }
 }
@@ -256,6 +263,6 @@
     display: flex;
     align-items: flex-start;
     width: 100%;
-    padding-top: 22px;
+    padding-top: 20px;
   }
 }

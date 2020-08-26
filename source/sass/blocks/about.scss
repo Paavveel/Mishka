@@ -2,20 +2,18 @@
   padding-bottom: 35px;
 
   @include viewport--md {
-    padding-bottom: 83px;
+    padding-bottom: 58px;
   }
 
   @include viewport--lg {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 3px;
-    padding-bottom: 90px;
+    padding: 3px 50px 64px;
   }
 }
 
 .about__top-img {
   width: 100%;
   margin: 0 auto;
+  display: block;
 
   @include viewport--lg {
     width: 1050px;
@@ -29,7 +27,7 @@
 }
 
 .about__heading {
-  margin: 31px 0 15px;
+  margin: 21px 0 15px;
 
   font-weight: bold;
   font-size: 25px;
@@ -38,7 +36,7 @@
   @include viewport--md {
     font-size: 43px;
     line-height: 50px;
-    margin: 57px 0 15px;
+    margin: 54px 0 15px;
   }
 
   @include viewport--lg {
@@ -49,15 +47,21 @@
 }
 
 .about__list {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 
   @include viewport--md {
-    column-width: auto;
+    width: 668px;
     column-count: 2;
     column-gap: 0;
+    margin-top: 10px;
+  }
+
+  @include viewport--lg {
+    width: 700px;
   }
 }
 
@@ -65,98 +69,82 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  min-height: 94px;
+  margin: 29px 0 0;
 
   @include viewport--md {
     font-size: 20px;
     line-height: 22px;
-    border: 1px solid transparent;
+    display: inline-block;
+    width: 330px;
+    min-height: 121px;
+    margin-top: 32px;
   }
 }
 
-.about__item .about__item-flower {
-  margin: 28px 0 18px 8px;
-}
+.about__item-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
 
-.about__item .about__item-money {
-  margin: 28px 0 28px 0;
+  &--eco {
+    margin-left: 8px;
 
-  @include viewport--md {
-    margin: 51px 0 28px 0;
+    @include viewport--md {
+      margin-top: -6px;
+      margin-bottom: 19px;
+    }
   }
-}
 
-.about__item .about__item-heart {
-  margin: 33px 0 23px 8px;
-
-  @include viewport--md {
-    margin: 55px 0 23px 8px;
+  &--style {
+    @include viewport--md {
+      margin-top: -3px;
+      margin-bottom: 27px;
+    }
   }
-}
 
-.about__item .about__item-ball {
-  margin: 31px 0 18px 4px;
-}
+  &--likes {
+    margin-left: 7px;
+    padding-top: 6px;
 
-.about__item .about__item-rocket {
-  margin: 31px 0 27px -5px;
-
-  @include viewport--md {
-    margin: 54px 0 27px -5px;
+    @include viewport--md {
+      padding-top: 4px;
+      margin-left: 8px;
+      margin-bottom: 22px;
+    }
   }
-}
 
-.about__item .about__item-gift {
-  margin: 31px 0 21px 3px;
+  &--handmade {
+    margin-left: 3px;
+    padding-top: 2px;
 
-  @include viewport--md {
-    margin: 54px 0 21px 3px;
+    @include viewport--md {
+      margin-top: -5px;
+      margin-bottom: 18px;
+    }
   }
-}
 
-.about__list li:nth-of-type(1) {
-  width: 183px;
+  &--support {
+    margin-left: -5px;
+    padding-top: 3px;
 
-  @include viewport--md {
-    width: 200px;
+    @include viewport--md {
+      margin-left: -6px;
+      padding-top: 0;
+      margin-bottom: 29px;
+    }
   }
-}
 
-.about__list li:nth-of-type(2) {
-  width: 203px;
+  &--gift {
+    margin-left: 3px;
 
-  @include viewport--md {
-    width: 220px;
-  }
-}
-
-.about__list li:nth-of-type(3) {
-  width: 184px;
-
-  @include viewport--md {
-    width: 206px;
-  }
-}
-
-.about__list li:nth-of-type(4) {
-  width: 218px;
-
-  @include viewport--md {
-    width: 240px;
-  }
-}
-
-.about__list li:nth-of-type(5) {
-  width: 260px;
-
-  @include viewport--md {
-    width: 280px;
-  }
-}
-
-.about__list li:nth-of-type(6) {
-  width: 218px;
-
-  @include viewport--md {
-    width: 240px;
+    @include viewport--md {
+      margin-bottom: 23px;
+    }
   }
 }

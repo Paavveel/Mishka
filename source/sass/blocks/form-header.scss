@@ -13,21 +13,25 @@
   }
 }
 
-.form-header-img {
+.form-header__img {
   display: none;
 
   @include viewport--md {
     display: block;
     margin-top: auto;
-    margin-bottom: -1px;
+
     width: 100%;
+    height: auto;
+  }
+
+  @include viewport--lg {
+    width: auto;
   }
 }
 
 .form-header__title {
   margin: 0;
-  padding: 0 15px 20px;
-  padding-top: 75px;
+  padding: 75px 5px 20px;
 
   font-weight: bold;
   font-size: 27px;
@@ -41,7 +45,7 @@
   }
 
   @include viewport--lg {
-    padding-top: 103px;
+    padding-top: 101px;
     font-size: 53px;
     line-height: 57px;
   }

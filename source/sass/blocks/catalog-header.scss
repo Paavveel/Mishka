@@ -13,20 +13,20 @@
   }
 }
 
-.catalog-header-img {
+.catalog-header__img {
   display: none;
 
   @include viewport--md {
     display: block;
     margin-top: auto;
-    margin-bottom: -1px;
-    width: 100%;
+    height: auto;
+    width: auto;
   }
 }
 
 .catalog-header__title {
   margin: 0;
-  padding: 74px 15px 15px;
+  padding: 74px 7px 15px;
 
   font-weight: bold;
   font-size: 27px;
@@ -36,7 +36,7 @@
   @include viewport--md {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 103px;
+    padding-top: 101px;
   }
 
   @include viewport--lg {

@@ -37,7 +37,7 @@
 
 .production__icon-video {
   position: absolute;
-  top: 28px;
+  top: 31px;
   left: 34px;
 
   @include viewport--md {
@@ -52,7 +52,7 @@
 }
 
 .production__title-top {
-  padding: 21px 0 26px 91px;
+  padding: 23px 0 26px 91px;
   margin: 0;
   border: 1px solid $color-grey;
   border-bottom: none;
@@ -83,6 +83,8 @@
 }
 
 .production__video-img {
+  display: block;
+
   @include viewport--md {
     order: 1;
   }
@@ -104,9 +106,10 @@
   }
 
   @include viewport--lg {
-    padding: 0 58px 0 79px;
+    padding: 0 57px 0 79px;
     border-top: 1px solid $color-grey;
     width: 950px;
+    padding-bottom: 40px;
   }
 }
 
@@ -134,7 +137,7 @@
   border: none;
   background-color: $color-transparent;
   position: absolute;
-  top: 130px;
+  top: 132px;
   left: 80px;
   cursor: pointer;
 

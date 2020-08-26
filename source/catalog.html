@@ -124,7 +124,7 @@
         <div class="container">
           <h1 class="catalog-header__title">Каталог товаров</h1>
         </div>
-        <svg class="catalog-header-img" width="1150" height="34">
+        <svg class="catalog-header__img" width="1150" height="34">
           <use xlink:href="#icon-bg-zigzag-fill"></use>
         </svg>
       </div>
@@ -372,11 +372,14 @@
       </section>
       <section class="production container">
         <div class="production__inner">
-          <img
+          <svg
             class="production__icon-video"
-            src="img/icon-video.svg"
-            alt="Иконка видеокамеры"
-          />
+            width="32"
+            height="32"
+            aria-hidden="true"
+          >
+            <use xlink:href="#icon-video"></use>
+          </svg>
           <h2 class="production__title-top">Процесс производства</h2>
           <picture>
             <source

@@ -12,16 +12,9 @@ html {
   box-sizing: border-box;
 }
 
-img,
-video,
-svg {
-  display: block;
+img {
   max-width: 100%;
   height: auto;
-}
-
-textarea {
-  resize: none;
 }
 
 a {

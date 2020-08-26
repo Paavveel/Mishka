@@ -9,7 +9,6 @@
 .form__subtitle {
   margin-top: 19px;
   margin-bottom: 29px;
-  padding: 0 33px 0 0;
 
   font-size: 13px;
   color: $color-brown;
@@ -19,12 +18,11 @@
     line-height: 30px;
     margin-top: 55px;
     margin-bottom: 61px;
-    padding: 0 85px 0 0;
   }
 
   @include viewport--lg {
     padding-left: 175px;
-    padding-right: 292px;
+    padding-right: 192px;
     margin-top: 99px;
   }
 }
@@ -482,8 +480,8 @@
 
 .form__text {
   @include viewport--md {
-    padding: 15px 9px 17px 17px;
-    margin-left: 29px;
+    padding: 16px 9px 16px 18px;
+    margin-left: 25px;
   }
 }
 
@@ -501,7 +499,7 @@
 
   @include viewport--md {
     padding-right: 58px;
-    padding-left: 18px;
+    padding-left: 17px;
   }
 }
 
@@ -554,6 +552,7 @@
   border: 2px solid $color-brown;
   min-height: 142px;
   padding: 16px;
+  resize: none;
 
   &:hover {
     border: 2px solid $form-border;

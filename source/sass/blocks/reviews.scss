@@ -1,26 +1,20 @@
 .reviews {
-  padding-bottom: 44px;
+  padding-bottom: 36px;
 
   @include viewport--md {
     min-height: 457px;
-    padding-bottom: 69px;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-
-    @include retina {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 349px auto;
-    }
+    padding-bottom: 65px;
   }
 
   @include viewport--lg {
-    background-image: none;
+    padding-bottom: 67px;
   }
 }
 
 .reviews__inner {
   width: 260px;
   margin: 0 auto;
+  position: relative;
 
   @include viewport--md {
     width: auto;
@@ -34,13 +28,36 @@
   @include viewport--lg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
+.reviews__img {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 457px;
+
+  @include viewport--md {
+    left: -50px;
+    background: url("../img/review@1x.jpg");
+    background-color: $color-grey;
+    z-index: -1;
 
     @include retina {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 349px auto;
+      background: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
+  }
+
+  @include viewport--lg {
+    left: 0;
+    background: url("../img/review@1x.jpg");
+    background-color: $color-grey;
+    z-index: -1;
+
+    @include retina {
+      background: url("../img/review@2x.jpg");
+      background-size: 350px;
     }
   }
 }
@@ -70,6 +87,7 @@
   @include viewport--md {
     grid-column: 1 / 5;
     position: relative;
+    padding-bottom: 47px;
   }
 
   @include viewport--lg {
@@ -82,7 +100,6 @@
 }
 
 .reviews__text {
-  width: 243px;
   font-size: 15px;
   margin: 0;
   min-height: 270px;
@@ -97,15 +114,15 @@
   }
 
   @include viewport--lg {
-    width: 868px;
+    width: auto;
   }
 }
 
 .reviews__author-info {
-  margin: 35px 0 27px;
+  margin: 34px 0 28px;
 
   @include viewport--md {
-    margin: 61px 0 0;
+    margin: 59px 0 0;
   }
 
   @include viewport--lg {
@@ -115,12 +132,16 @@
 
 .reviews__author-name {
   margin: 0;
-
+  margin-bottom: 3px;
   font-weight: bold;
   font-size: 17px;
 
   @include viewport--md {
     font-size: 18px;
+  }
+
+  @include viewport--lg {
+    font-size: 17px;
   }
 }
 
@@ -131,10 +152,6 @@
   font-size: 17px;
   line-height: 30px;
   color: $color-brown;
-
-  @include viewport--md {
-    font-size: 18px;
-  }
 }
 
 .reviews__list-buttons {

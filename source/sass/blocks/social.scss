@@ -3,31 +3,13 @@
 
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
-
-  @include viewport--md {
-    & li:nth-child(1) {
-      margin-top: 57px;
-      margin-bottom: 0;
-    }
-
-    & li:nth-child(2) {
-      margin-top: 54px;
-      margin-bottom: 0;
-    }
-
-    & li:nth-child(3) {
-      margin-top: 57px;
-      margin-bottom: 0;
-    }
-  }
+  align-items: center;
 }
 
 .social__item {
   padding: 0 20px;
 
   height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .social__link {
