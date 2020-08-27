@@ -19,7 +19,12 @@
   @include viewport--md {
     display: block;
     margin-top: auto;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -1px;
+  }
+
+  @include viewport--lg {
     width: auto;
   }
 }

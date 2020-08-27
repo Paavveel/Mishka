@@ -71,7 +71,7 @@
                 >Новые поступления</a
               >
             </li>
-            <li class="main-nav__inner-item main-nav__inner-item--desktop">
+            <li class="main-nav__inner-item main-nav__inner-item--sale">
               <a class="main-nav__inner-item-link" href="#">Распродажа</a>
             </li>
           </ul>
@@ -416,6 +416,38 @@
 
           <div class="contacts__map">
             <iframe src="https://yandex.ru/map-widget/v1/-/CCQp4-W0XD"></iframe>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x"
+              />
+              <img
+                class="contacts__map-img"
+                src="img/map-desktop@1x.jpg"
+                srcset="img/map-desktop@2x.jpg 2x"
+                alt="Фото карты с адресом г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101"
+              />
+            </picture>
           </div>
 
           <div class="contacts__write">
