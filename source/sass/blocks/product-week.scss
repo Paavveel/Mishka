@@ -115,12 +115,21 @@
 }
 
 .product-week__inner {
+  width: 260px;
+  height: 316px;
+  margin: 0 auto;
+  background-color: #ececec;
+
   @include viewport--md {
+    width: 334px;
+    height: 404px;
     grid-column: 3 / 5;
     grid-row: 2 / 6;
   }
 
   @include viewport--lg {
+    width: 525px;
+    height: 636px;
     grid-column: 4 / 7;
     grid-row: 1 / 6;
   }
